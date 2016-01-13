@@ -1,0 +1,19 @@
+// JavaScript Document
+
+$(document).ready(function() {
+    $('#bn ul li a').click(function(){
+	//$('#main img').attr('src', $(this).attr('href'));
+	//return false;	
+	
+	//#main img앞에 연결된 href이미지 삽입
+	var href1 = $(this).attr('href');
+	$('#main img').before("<img src="+href1+">");
+	$('#main img:last').fadeOut('slow', function(){
+		$('#main img:last').remove();	
+	});
+	return false;
+	
+	});
+});
+
+
