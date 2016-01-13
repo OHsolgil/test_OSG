@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#bn ul li a').click(function(){
+    $('#breaking_news ul li a').click(function(){
 
 	var href1 = $(this).attr('href');
 	$('#main img').before("<img src="+href1+">");
